@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Вероника Т. — QA Engineer</title>
+
+    <meta
+        name="description"
+        content="Портфолио Вероники Т. — QA Engineer"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="icon" href="assets/icn/cat-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header">
+    <div class="container header__inner">
+
+        <a href="#home" class="logo">
+            V<span>.</span>T
+        </a>
+
+        <nav class="navigation" id="nav">
+            <a href="#about"><span data-i18n="nav.about">Обо мне</span></a>
+            <a href="#skills"><span data-i18n="nav.skills">Навыки</span></a>
+            <a href="#projects"><span data-i18n="nav.projects">Проекты</span></a>
+            <a href="#contact"><span data-i18n="nav.contact">Контакты</span></a>
+        </nav>
+
+        <div class="header__right">
+            <button class="language-switcher" id="langSwitch" type="button" aria-label="Переключить язык">
+                RU <span>/</span> EN
+            </button>
+
+            <button class="menu-button" id="menuBtn" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero__background-text">
+        QA
+    </div>
+
+    <div class="container hero__inner">
+
+        <div class="hero__content">
+
+            <div class="eyebrow">
+                <span class="status-dot"></span>
+                <span data-i18n="hero.eyebrow">QA ENGINEER</span>
+            </div>
+
+            <!-- ИМЯ: меняется в js/translations.js для RU / EN -->
+            <h1>
+                <span class="hero__name" data-i18n="hero.nameFirst">Вероника</span><br>
+                <span data-i18n="hero.nameLast">Трушева</span>
+            </h1>
+
+            <p class="hero__description">
+                <span data-i18n="hero.description">Тестирую веб и мобильные приложения, API и backend-системы. Ищу не только баги, но и причины их возникновения.</span>
+            </p>
+
+            <div class="hero__buttons">
+
+                <a href="#projects" class="button button--dark">
+                    <span data-i18n="hero.projects">Смотреть проекты</span>
+                    <span>↗</span>
+                </a>
+
+                <a href="#contact" class="button button--outline">
+                    <span data-i18n="hero.contact">Связаться</span>
+                </a>
+
+            </div>
+
+            <!-- КЛЮЧЕВОЙ СТЕК: это видно сразу на первом экране. Меняй список здесь. -->
+            <div class="hero__stack" aria-label="Ключевые навыки">
+                <span>Manual QA</span>
+                <span>API Testing</span>
+                <span>Postman</span>
+                <span>SQL</span>
+                <span>DevTools</span>
+                <span>Python</span>
+            </div>
+
+            <div class="hero__meta">
+
+                <!--<div>
+                    <span>25</span>
+                    <small><span data-i18n="hero.years">лет</span></small>
+                </div>-->
+
+                <!--<div>
+                    <span>ГОРОД</span>
+                    <small><span data-i18n="hero.location">локация</span></small>
+                </div>-->
+
+                <div>
+                    <span>Junior QA Engineer</span>
+                    <small><span data-i18n="hero.specialization">специализация</span></small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CAT -->
+
+        <div class="hero__visual">
+
+            <div class="cat-card">
+
+                <div class="cat-card__top">
+                    <span>QA CAT</span>
+                    <span>● ONLINE</span>
+                </div>
+
+                <div class="cat-image">
+                    <img src="assets/img/me.jpg" alt="Вероника Т.">
+
+                </div>
+
+                <div class="cat-card__bottom">
+
+                    <div>
+                        <strong>Bug Hunter</strong>
+                        <span>looking for suspicious behavior</span>
+                    </div>
+
+                    <div class="paw">
+                        🐾
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="floating-note floating-note--one">
+                <span>🐾</span>
+                Bug detected
+            </div>
+
+            <div class="floating-note floating-note--two">
+                <span>✓</span>
+                Looks suspicious...
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+        <!--<span>SCROLL TO EXPLORE</span>-->
+        <div class="scroll-line"></div>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section class="section skills" id="skills">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">01</span>
+
+            <div>
+                <span class="eyebrow" data-i18n="skills.eyebrow">TECH STACK</span>
+
+                <h2>
+                    <span data-i18n="skills.title">Инструменты,<br><span>с которыми работаю</span></span>
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <!-- TESTING -->
+
+            <article class="skill-card">
+
+                <div class="skill-card__number">
+                    01
+                </div>
+
+                <h3 data-i18n="skills.testing">Testing</h3>
+
+                <p data-i18n="skills.testingText">
+                    Тестирование функциональности, пользовательских сценариев и интеграций.
+                </p>
+
+                <div class="tags">
+                    <span>Functional Testing</span>
+                    <span>Regression</span>
+                    <span>Smoke</span>
+                    <span>Sanity</span>
+                    <span>Exploratory</span>
+                    <span>Test Cases</span>
+                    <span>Bug Reports</span>
+                    <span>Boundary Value Analysis</span>
+                    <span>Equivalence Partitioning</span>
+                    <span>Positive / Negative Testing</span>
+                </div>
+
+            </article>
+
+
+            <!-- API -->
+
+            <article class="skill-card">
+
+                <div class="skill-card__number">
+                    02
+                </div>
+
+                <h3 data-i18n="skills.api">API</h3>
+
+                <p data-i18n="skills.apiText">
+                    Тестирование взаимодействия
+                    клиентских и серверных систем.
+                </p>
+
+                <div class="tags">
+                    <span>REST API</span>
+                    <span>Postman</span>
+                    <span>Swagger</span>
+                    <span>SOAP UI</span>
+                    <span>Charles</span>
+                    <span>JSON</span>
+                    <span>XML</span>
+                    <span>HTTP</span>
+                </div>
+
+            </article>
+
+
+            <!-- DATABASE -->
+
+            <article class="skill-card">
+
+                <div class="skill-card__number">
+                    03
+                </div>
+
+                <h3 data-i18n="skills.databases">Databases</h3>
+
+                <p data-i18n="skills.dbText">
+                    Работа с данными и проверка
+                    backend-логики.
+                </p>
+
+                <div class="tags">
+                    <span>SQL</span>
+                    <span>NoSQL</span>
+                    <span>MongoDB</span>
+                    <span>PostgreSQL</span>
+                    <span>MySQL</span>
+                    <span>Redis</span>
+                    <span>DBeaver</span>
+                    <span>Compass</span>
+                    
+                </div>
+
+            </article>
+
+
+            <!-- MONITORING -->
+
+            <article class="skill-card">
+
+                <div class="skill-card__number">
+                    04
+                </div>
+
+                <h3 data-i18n="skills.monitoring">Monitoring</h3>
+
+                <p data-i18n="skills.monitoringText">
+                    Анализ логов, ошибок,
+                    метрик и взаимодействия сервисов.
+                </p>
+
+                <div class="tags">
+                    <span>Kibana</span>
+                    <span>Grafana</span>
+                    <span>Sentry</span>
+                    <span>Jaeger</span>
+                    <span>Metabase</span>
+                </div>
+
+            </article>
+
+
+            <!-- DEV -->
+
+            <article class="skill-card">
+
+                <div class="skill-card__number">
+                    05
+                </div>
+
+                <h3 data-i18n="skills.dev">Dev & Infra</h3>
+
+                <p data-i18n="skills.devText">
+                    Работаю с окружениями, CI/CD, 
+                    брокером сообщений и mock-сервисами
+                </p>
+
+                <div class="tags">
+                    <span>Git</span>
+                    <span>GitLab</span>
+                    <span>CI/CD</span>
+                    <span>Linux</span>
+                    <span>Kafka</span>
+                    <span>WireMock</span>
+                </div>
+
+            </article>
+
+
+            <!-- TOOLS -->
+
+            <article class="skill-card">
+
+                <div class="skill-card__number">
+                    06
+                </div>
+
+                <h3 data-i18n="skills.tools">Tools</h3>
+
+                <p data-i18n="skills.toolsText">
+                    Инструменты командной работы
+                    и анализа продукта.
+                </p>
+
+                <div class="tags">
+                    <span>TestIT</span>
+                    <span>Yandex Tracker</span>
+                    <span>Figma</span>
+                    <span>Miro</span>
+                    <span>Yandex Metrica</span>
+                    <span>DevTools</span>
+                </div>
+
+            </article>
+
+
+            <!-- PYTHON -->
+
+            <article class="skill-card skill-card--wide">
+
+                <div class="skill-card__number">
+                    07
+                </div>
+
+                <div class="skill-card__wide-content">
+
+                    <div>
+                        <h3 data-i18n="skills.programming">Programming</h3>
+
+                        <p data-i18n="skills.pythonText">
+                            Небольшие скрипты, работа с данными и Telegram-ботами.
+                        </p>
+                    </div>
+
+                    <div class="programming">
+                        <strong>Python</strong>
+                        <span>VS Code · PyCharm</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section about" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">02</span>
+
+            <div>
+                <span class="eyebrow" data-i18n="about.eyebrow">ABOUT ME</span>
+
+                <h2>
+                    <span data-i18n="about.title">Люблю разбираться,<br><span>как всё работает</span></span>
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="about__grid">
+
+            <div class="about__text">
+
+                <p class="large-text" data-i18n="about.text1">
+                    Для меня тестирование — это не только про поиск багов,
+                    но и способ снижать стоимость ошибок, сокращать петлю возврата
+                    и помогать команде быстрее выпускать качественный продукт.
+                </p>
+
+                <p data-i18n="about.text2">
+                    Чем раньше команда находит проблему, тем дешевле её исправить.
+                    Поэтому я стараюсь подключаться ещё на этапе требований,
+                    а тестирование рассматриваю как часть всего процесса разработки,
+                    а не финальную проверку перед релизом.
+                </p>
+
+                <p data-i18n="about.text2_1">
+                    Тестирую UI, REST/SOAP API и backend, работаю с SQL, логами,
+                    метриками и трассировками. Ищу не только сам дефект,
+                    но и его причину и влияние на систему.
+                </p>
+
+                <p data-i18n="about.text3">
+                    *А ещё люблю котов. Иногда они помогают мне тестировать интерфейс.
+                </p>
+                <img class="about__cat" src="assets/img/cat-small.webp" alt="Кот помогает тестировать интерфейс" aria-hidden="true">
+
+            </div>
+
+
+            <div class="about__facts">
+
+                <div class="fact">
+                    <span>01</span>
+                    <strong>Manual QA</strong>
+                    <small data-i18n="about.fact1">Functional · Regression · Smoke · Exploratory</small>
+                </div>
+
+                <div class="fact">
+                    <span>02</span>
+                    <strong>API Testing</strong>
+                    <small data-i18n="about.fact2">REST · SOAP · Postman · Swagger</small>
+                </div>
+
+                <div class="fact">
+                    <span>03</span>
+                    <strong>Backend</strong>
+                    <small data-i18n="about.fact3">DB · Logs · Kafka · Jaeger</small>
+                </div>
+
+                <div class="fact">
+                    <span>04</span>
+                    <strong>Python</strong>
+                    <small data-i18n="about.fact4">Pytest · Requests · Test Automation</small>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+             EDUCATION
+             Дипломы и дополнительное образование.
+             Если позже захочешь, здесь можно добавить вуз, год и ссылки.
+        ========================= -->
+        <div class="about__education">
+
+            <div class="education__heading">
+                <span class="eyebrow" data-i18n="education.eyebrow">ОБРАЗОВАНИЕ</span>
+                <h3 data-i18n="education.title">Образование и квалификация</h3>
+            </div>
+
+            <div class="education__items">
+
+                <div class="education__item">
+                    <span>01</span>
+                    <div>
+                        <strong data-i18n="education.degreeTitle">Программная инженерия</strong>
+                        <small data-i18n="education.degreeText">09.03.04 · Диплом бакалавра</small>
+                    </div>
+                </div>
+
+                <div class="education__item">
+                    <span>02</span>
+                    <div>
+                        <strong data-i18n="education.aiTitle">Аналитик прикладного ИИ</strong>
+                        <small data-i18n="education.aiText">Диплом о проф. переподготовке</small>
+                    </div>
+                </div>
+
+                <div class="education__item">
+                    <span>03</span>
+                    <div>
+                        <strong data-i18n="education.adminTitle">Администратор ИКТ-систем</strong>
+                        <small data-i18n="education.adminText">Диплом о проф. переподготовке</small>
+                    </div>
+                </div>
+
+                <div class="education__item">
+                    <span>04</span>
+                    <div>
+                        <strong data-i18n="education.qaTitle">Manual QA</strong>
+                        <small data-i18n="education.qaText">Курсы от QA Studio</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     QA CAT BANNER
+========================= -->
+
+<section class="cat-banner">
+    <!-- ДЕКОР: кот для QA-блока. Путь к картинке можно поменять здесь. -->
+    <img class="cat-banner__cat" src="assets/img/cat-bug.webp" alt="" aria-hidden="true">
+
+    <div class="container cat-banner__inner">
+
+        <div>
+
+            <span class="eyebrow" data-i18n="cat.eyebrow">
+                QA CAT REPORT
+            </span>
+
+            <h2 data-i18n="cat.title">
+                Found something<br>
+                <span>suspicious</span>
+            </h2>
+
+        </div>
+
+        <div class="cat-banner__status">
+
+            <span class="eyebrow" data-i18n="cat.bugReport">
+                BUG REPORT
+            </span>
+
+            <h3 data-i18n="cat.bugTitle">
+                Bug #001 — Cat detected
+            </h3>
+
+            <div class="status-row">
+                <span data-i18n="cat.expected">Expected</span>
+                <strong data-i18n="cat.expectedValue">One cat max</strong>
+            </div>
+
+            <div class="status-row">
+                <span data-i18n="cat.actual">Actual</span>
+                <strong data-i18n="cat.actualValue">Cat count keeps increasing</strong>
+            </div>
+
+            <div class="status-row">
+                <span data-i18n="cat.priority">Priority</span>
+                <strong data-i18n="cat.priorityValue">Critical 🐈</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section class="section projects" id="projects">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">03</span>
+
+            <div>
+                <span class="eyebrow" data-i18n="projects.eyebrow">SELECTED WORK</span>
+
+                <!-- Заголовок разбит на две строки, чтобы обе корректно переводились -->
+                <h2>
+                    <span data-i18n="projects.titleFirst">Проекты,</span><br>
+                    <span data-i18n="projects.titleSecond">которые я тестировала</span>
+                </h2>
+            </div>
+
+        </div>
+
+
+        <!-- СПИСОК ПРОЕКТОВ -->
+        <div class="projects-list">
+
+
+            <!-- PROJECT 1 -->
+
+            <!-- <article class="project-card">
+
+                <div class="project-card__top">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <span class="project-type">
+                        WEB · API
+                    </span>
+
+                </div>
+
+                <div class="project-card__content">
+
+                    <div class="project-card__title">
+
+                        <h3 data-i18n="project.pokemon.title">
+                            Pokemon Battle
+                        </h3>
+
+                        <span class="project-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                    <p data-i18n="project.pokemon.text">
+                        Тестирование веб-приложения,
+                        API и пользовательских сценариев.
+                    </p>
+
+                    <div class="tags">
+                        <span>Postman</span>
+                        <span>REST API</span>
+                        <span>SQL</span>
+                        <span>DevTools</span>
+                    </div>
+
+                </div>
+
+                <div class="project-card__bottom">
+                    <span data-i18n="project.caseStudy">CASE STUDY</span>
+                    <span data-i18n="project.view">VIEW PROJECT ↗</span>
+                </div>
+
+            </article> -->
+
+
+            <!-- PROJECT 2 -->
+
+            <!-- <article class="project-card">
+
+                <div class="project-card__top">
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <span class="project-type">
+                        API · BACKEND
+                    </span>
+
+                </div>
+
+                <div class="project-card__content">
+
+                    <div class="project-card__title">
+
+                        <h3 data-i18n="project.rating.title">
+                            Rating Microservice
+                        </h3>
+
+                        <span class="project-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                    <p data-i18n="project.rating.text">
+                        Исследование взаимодействия
+                        микросервисов и поиск проблем
+                        в работе API.
+                    </p>
+
+                    <div class="tags">
+                        <span>Postman</span>
+                        <span>Jaeger</span>
+                        <span>REST API</span>
+                        <span>Logs</span>
+                    </div>
+
+                </div>
+
+                <div class="project-card__bottom">
+                    <span data-i18n="project.caseStudy">CASE STUDY</span>
+                    <span data-i18n="project.view">VIEW PROJECT ↗</span>
+                </div>
+
+            </article> -->
+
+
+            <!-- PROJECT 3 -->
+
+            <!-- <article class="project-card">
+
+                <div class="project-card__top">
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <span class="project-type">
+                        PYTHON · BOT
+                    </span>
+
+                </div>
+
+                <div class="project-card__content">
+
+                    <div class="project-card__title">
+
+                        <h3 data-i18n="project.telegram.title">
+                            Telegram Bot
+                        </h3>
+
+                        <span class="project-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                    <p data-i18n="project.telegram.text">
+                        Проект на Python с обработкой
+                        пользовательских сценариев
+                        и работой с данными.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>aiogram</span>
+                        <span>SQLite</span>
+                    </div>
+
+                </div>
+
+                <div class="project-card__bottom">
+                    <span data-i18n="project.project">PROJECT</span>
+                    <span data-i18n="project.view">VIEW PROJECT ↗</span>
+                </div>
+
+            </article> -->
+
+
+            <!-- PROJECT 4: AUTHORIZATION / REGISTRATION -->
+            <!-- ССЫЛКА НА ПРОЕКТ: замени href="#" на ссылку на Miro/репозиторий/кейc -->
+            <a class="project-card project-card--with-image" href="https://miro.com/app/board/uXjVHuK5apk=/?moveToWidget=3458764681767320982&cot=14" target="_blank" rel="noopener">
+                <div class="project-card__top">
+                    <span class="project-number">01</span>
+                    <span class="project-type">WEB · CHECKLIST</span>
+                </div>
+
+                <div class="project-card__content">
+                    <div class="project-card__title">
+                        <h3 data-i18n="project.auth.title">Authorization & Registration</h3>
+                        <span class="project-arrow">↗</span>
+                    </div>
+                    <p data-i18n="project.auth.text">Чек-лист позитивных и негативных сценариев, валидация полей, обязательные поля и граничные значения.</p>
+                    <div class="tags">
+                        <span>Test Cases</span>
+                        <span>Checklist</span>
+                        <span>Boundary Value Analysis</span>
+                        <span>Miro</span>
+                    </div>
+                </div>
+
+                <div class="project-card__bottom">
+                    <span data-i18n="project.caseStudy">CASE STUDY</span>
+                    <span data-i18n="project.view">VIEW PROJECT ↗</span>
+                </div>
+
+                <!-- ДЕКОР: кот успеха; можно заменить на другой cat-*.webp -->
+                <img class="project-cat" src="assets/img/cat-success.webp" alt="" aria-hidden="true">
+            </a>
+
+            <!-- PROJECT 5: TRAINERS API -->
+            <!-- ССЫЛКА НА ПРОЕКТ: замени href="#" на ссылку на Miro/репозиторий/кейc -->
+            <a class="project-card" href="https://miro.com/app/board/uXjVHuK5apk=/?moveToWidget=3458764682080193701&cot=14" target="_blank" rel="noopener">
+                <div class="project-card__top">
+                    <span class="project-number">02</span>
+                    <span class="project-type">API · BACKEND</span>
+                </div>
+
+                <div class="project-card__content">
+                    <div class="project-card__title">
+                        <h3 data-i18n="project.trainers.title">Trainers API</h3>
+                        <span class="project-arrow">↗</span>
+                    </div>
+                    <p data-i18n="project.trainers.text">Проверка POST-запроса: обязательные параметры, типы и значения данных, HTTP-ответы и обработка позитивных и негативных сценариев.</p>
+                    <div class="tags">
+                        <span>REST API</span>
+                        <span>Postman</span>
+                        <span>JSON</span>
+                        <span>Miro</span>
+                    </div>
+                </div>
+
+                <div class="project-card__bottom">
+                    <span data-i18n="project.caseStudy">CASE STUDY</span>
+                    <span data-i18n="project.view">VIEW PROJECT ↗</span>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section contact" id="contact">
+
+    <div class="container">
+
+        <div class="contact__content">
+
+            <span class="eyebrow" data-i18n="contact.eyebrow">
+                GET IN TOUCH
+            </span>
+
+            <h2>
+                <span data-i18n="contact.title">Нашли баг?<br><span>Или, может быть, QA инженера в команду?</span></span>
+            </h2>
+
+            <p data-i18n="contact.text">
+                Буду рада обсудить проект, вакансию, сотрудничество или стажировку.
+            </p>
+
+
+            <div class="contacts">
+
+                <a href="https://t.me/nika_q" class="contact-link">
+
+                    <div>
+                        <span>Telegram</span>
+                        <small>@nika_q</small>
+                    </div>
+
+                    <span>↗</span>
+
+                </a>
+
+
+                <a href="https://github.com/Tr-Veronika" class="contact-link">
+
+                    <div>
+                        <span>GitHub</span>
+                        <small>github.com/Tr-Veronika</small>
+                    </div>
+
+                    <span>↗</span>
+
+                </a>
+
+
+                <a href="https://vk.ru/vtotzeto" class="contact-link">
+
+                    <div>
+                        <span>VK</span>
+                        <small>vk.ru/vtotzeto</small>
+                    </div>
+
+                    <span>↗</span>
+
+                </a>
+
+
+                <!-- <a href="mailto:nika.uch762@gmail.com" class="contact-link">
+
+                    <div>
+                        <span>Email</span>
+                        <small>nika.uch762@gmail.com</small>
+                    </div>
+
+                    <span>↗</span>
+
+                </a> -->
+
+            </div>
+
+            <div class="contact-link email-copy" onclick="navigator.clipboard.writeText('nika.uch762@gmail.com')">
+
+                <div>
+                    <span>Email</span>
+                    <small>nika.uch762@gmail.com</small>
+                </div>
+
+                <span class="copy-hint">Click to copy</span>
+
+            </div>
+            
+
+        </div>
+
+
+        <div class="contact__cat">
+
+            <!-- ДЕКОР: лапка. Если нужна картинка вместо emoji, замени содержимое этого блока. -->
+            <div class="big-paw">
+                <img src="assets/icn/paw.svg" alt="" aria-hidden="true">
+            </div>
+
+            <span data-i18n="contact.meow">
+                Meow-mail is always open.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="container footer__inner">
+
+        <div>
+            © 2026 Veronika T.
+        </div>
+
+        <div data-i18n="footer.made">
+            Made with curiosity & 🐾
+        </div>
+
+        <a href="#home" data-i18n="footer.top">
+            BACK TO TOP ↑
+        </a>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+     Логика сайта и перевод вынесены в отдельные JS-файлы.
+========================= -->
+<script src="js/translations.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
