@@ -33,7 +33,7 @@ const translations = {
         "about.title": "Люблю разбираться,<br><span>как всё работает</span>",
         "about.text1": "Для меня тестирование — это не только про поиск багов, но и способ снижать стоимость ошибок, сокращать петлю возврата и помогать команде быстрее выпускать качественный продукт.",
         "about.text2": "Чем раньше команда находит проблему, тем дешевле её исправить. Поэтому я стараюсь подключаться ещё на этапе требований, а тестирование рассматриваю как часть всего процесса разработки, а не финальную проверку перед релизом.",
-        "about.text2_1": "Тестирую UI, REST/SOAP API и backend, работаю с SQL, логами, метриками и трассировками. Ищу не только сам дефект, но и его причину и влияние на систему.",
+        "about.text2_1": "Тестирую UI, REST/SOAP API и backend, включая микросервисную архитектуру. Работаю с SQL, логами, метриками и трассировками. Ищу не только сам дефект, но и его причину и влияние на систему.",
         "about.text3": "*А ещё люблю котов. Иногда они помогают мне тестировать интерфейс.",
         "about.fact1": "Functional · Regression · Smoke · Exploratory",
         "about.fact2": "REST · SOAP · Postman · Swagger",
@@ -42,13 +42,13 @@ const translations = {
 
         "education.eyebrow": "ОБРАЗОВАНИЕ",
         "education.title": "Образование и квалификация",
-        "education.degreeTitle": "Программная инженерия",
+        "education.degreeTitle": "Программная инженерия [2025]",
         "education.degreeText": "09.03.04 · Диплом бакалавра",
-        "education.aiTitle": "Аналитик прикладного ИИ",
+        "education.aiTitle": "Аналитик прикладного ИИ [2023]",
         "education.aiText": "Диплом о проф. переподготовке",
-        "education.adminTitle": "Администратор ИКТ-систем",
+        "education.adminTitle": "Администратор ИКТ-систем [2023]",
         "education.adminText": "Диплом о проф. переподготовке",
-        "education.qaTitle": "QA Engineer",
+        "education.qaTitle": "QA Engineer [2026]",
         "education.qaText": "Обучение в QA Studio",
 
         "skills.eyebrow": "СТЕК",
@@ -92,6 +92,22 @@ const translations = {
         "project.auth.text": "Чек-лист позитивных и негативных сценариев, валидация полей, обязательные поля и граничные значения.",
         "project.trainers.title": "Trainers API",
         "project.trainers.text": "Проверка POST-запроса: обязательные параметры, типы и значения данных, HTTP-ответы и обработка позитивных и негативных сценариев.",
+        
+        "project.bugApi.title": "API Bug Report",
+        "project.bugApi.text": "Документирование обнаруженных дефектов API с описанием шагов воспроизведения, фактического и ожидаемого результатов.",
+
+        "project.bugUi.title": "UI Bug Report",
+        "project.bugUi.text": "Документирование дефектов пользовательского интерфейса с описанием шагов воспроизведения и ожидаемого поведения.",
+
+        "project.cypress.title": "Cypress UI Autotests",
+        "project.cypress.text": "End-to-end автотесты пользовательских сценариев авторизации и восстановления пароля.",
+
+        "project.pytest.title": "Python API Autotests",
+        "project.pytest.text": "Автоматизированное тестирование NASA API с использованием Python, pytest и Requests.",
+
+        "project.telegram.title": "HTTP Cats Telegram Bot",
+        "project.telegram.text": "Telegram-бот на Python для получения изображений HTTP Cats с использованием aiogram.",
+
 
         "contact.eyebrow": "СВЯЗАТЬСЯ",
         "contact.title": "Нашли баг?<br><span>Или, может быть, QA инженера в команду?</span>",
@@ -122,7 +138,7 @@ const translations = {
     "about.title": "I like figuring out<br><span>how things work</span>",
     "about.text1": "To me, testing is not just about finding bugs, but also a way to reduce the cost of errors, shorten feedback loops, and help the team deliver a quality product faster.",
     "about.text2": "The earlier a problem is found, the cheaper it is to fix. That's why I try to get involved as early as the requirements stage and see testing as part of the entire development process, not just a final check before release.",
-    "about.text2_1": "I test UI, REST/SOAP APIs, and backend services, working with SQL, logs, metrics, and traces. I look beyond the defect itself to understand its root cause and impact on the system.",
+    "about.text2_1": "I test UI, REST/SOAP APIs, and backend systems, including microservice architectures. I work with SQL, logs, metrics, and traces, looking beyond individual defects to identify their root causes and impact on the system.",
     "about.text3": "*I also love cats. Sometimes they help me test the interface.",
     "about.fact1": "Functional · Regression · Smoke · Exploratory",
     "about.fact2": "REST · SOAP · Postman · Swagger",
@@ -131,13 +147,13 @@ const translations = {
 
     "education.eyebrow": "EDUCATION",
     "education.title": "Education & Qualifications",
-    "education.degreeTitle": "Software Engineering",
+    "education.degreeTitle": "Software Engineering [2025]",
     "education.degreeText": "09.03.04 · Bachelor's Degree",
-    "education.aiTitle": "Applied AI Analyst",
+    "education.aiTitle": "Applied AI Analyst [2023]",
     "education.aiText": "Professional Retraining Diploma",
-    "education.adminTitle": "ICT Systems Administrator",
+    "education.adminTitle": "ICT Systems Administrator [2023]",
     "education.adminText": "Professional Retraining Diploma",
-    "education.qaTitle": "QA Engineer",
+    "education.qaTitle": "QA Engineer [2026]",
     "education.qaText": "QA Studio Training",
 
     "skills.eyebrow": "STACK",
@@ -183,6 +199,23 @@ const translations = {
 
     "project.trainers.title": "Trainers API",
     "project.trainers.text": "Testing a POST request: required parameters, data types and values, HTTP responses, and positive and negative scenarios.",
+
+    
+    "project.bugApi.title": "API Bug Report",
+    "project.bugApi.text": "Documenting API defects with reproduction steps, actual results, and expected behavior.",
+
+    "project.bugUi.title": "UI Bug Report",
+    "project.bugUi.text": "Documenting user interface defects with reproduction steps and expected behavior.",
+
+    "project.cypress.title": "Cypress UI Autotests",
+    "project.cypress.text": "End-to-end automated tests for login and password recovery scenarios.",
+
+    "project.pytest.title": "Python API Autotests",
+    "project.pytest.text": "Automated testing of NASA API using Python, pytest, and Requests.",
+
+    "project.telegram.title": "HTTP Cats Telegram Bot",
+    "project.telegram.text": "A Python Telegram bot for retrieving HTTP Cats images using aiogram.",
+
 
     "contact.eyebrow": "GET IN TOUCH",
     "contact.title": "Found a bug?<br><span>Or maybe a QA Engineer for your team?</span>",
